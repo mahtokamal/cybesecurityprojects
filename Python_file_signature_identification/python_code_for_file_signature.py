@@ -1,5 +1,3 @@
-
-
 import magic
 
 def signatureof_file_identifications(pathof_file):
