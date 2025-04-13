@@ -2,32 +2,35 @@
 
 ## What is SOC Analyst Methods?
 The SOC Analyst method consists of 5-step security analysis method. Being a SOC Analyst, you have the responsibility to determine whether a security event is a malicious or not.
+
 Despite in the prevalence age of AI and automation tools, the manual security analysis method plays a key role in security event because manual method adds depth to threat comprehension and response strategies.
 
-Following are the Steps for security Analysis:
+**Following are the Steps for security Analysis:** <br>
 
 ![image](https://github.com/user-attachments/assets/23f75fb5-aba3-4d87-ae01-1230b3c3f9f6)
 
-**Step1: Reason** <br>
+**Step 1: Reason** <br>
 Find reason and signature why this alert triggered.
 
-**Step2: Supporting Evidence** <br>
+**Step 2: Supporting Evidence** <br>
 Document everything that supports the collected evidence for security analysis. Try to collect and gather as much as information from the security logs. This step is very important as these evidences are required in the analysis phase.
 
 Nowadays, the SOAR (Security Orchestration and Automation Response) automaton tools are being widely used for this step and it eases the security analysis efforts. However, manual automation still plays a key role and adds depth to the security analysis methodologies.
 
-**Step3: Analysis** <br>
-first step is to do analysis and reputation check on source IP. 
+**Step 3: Analysis** <br>
+At this stage, first we need to do analysis and reputation check on source IP.
+
 You can't trust on just 1 reputation check on source IP because some of the information may not be available on publicly available platform and different online platforms have different kinds of data available for respective IP and they don't share with each other. Therefore, it is always required to cross-check on source IP.
 
-**Step4: Conclusion** <br>
+**Step 4: Conclusion** <br>
 Write a short summary of what happened and the immediate actions that you can take. But the practice is to keep it short simple and precise that will be easily readable and measures for further actions.
 
-**Step5: Next Steps** <br>
+**Step 5: Next Steps** <br>
 write the actions that you cannot take and might be forwarded to senior concerned authority for further actions.
 
 ## Importance of Security Event Gateways
 Security Event Gateways are indispensable for allocation of times that are required for each step. Some of the events may demand more or less amount of time in specific steps.
+
 Following are the general guidelines that suggest the proportion of time shared for each step:
 
 ![image](https://github.com/user-attachments/assets/cdc8d9b7-a4cf-4b6b-ba56-894dd15d7a9c)
@@ -40,8 +43,10 @@ Following are the general guidelines that suggest the proportion of time shared 
 
 ## Project Ideas:
 As a part of SOC Analyst NOW! Course, which already included Splunk Cyber Range. It is a Splunk instance that actualize the enterprise-level settings that contains live attack data from honeypot infrastructure across the World.
+
 To access and want to do Security Analysis project, you have to become Black Badge Member to take advantages of Lifetime premium memberships.
-First visit to website cybernoweducation and after loading, click on Log in.
+
+First visit the website cybernoweducation and after loading, click on Log in.
 
 ![image](https://github.com/user-attachments/assets/c8ddc850-042b-4192-a38b-3e98da40320d)
 
@@ -86,13 +91,14 @@ Now, use filters options and select last 30 days (we’ll be using last 30 days 
 ![image](https://github.com/user-attachments/assets/a75dc19d-ec57-4949-b49c-21aed70654d6)
 
 Now click on Search field and type “md5=*” and click on search icon. (Here, we are targeting the logs that contain md5 fields).
+
 MD5 (message-digest) is a hashing algorithm that are used to verify the integrity of files.
 
 ![image](https://github.com/user-attachments/assets/38cf3010-7820-4843-86b1-5d9aff1ade80)
 
-Let’s follow each steps carefully:
-SOC Analyst Methods or steps to follow:
-1.	Reason
+**Let’s follow each steps carefully:** <br>
+**SOC Analyst Methods or steps to follow:** <br>
+**1.	Reason** <br>
 Now, we have the list of logs available that we will use from one of the logs. For this project, just select and expand (‘>’ icon) of the first log that appears first.
 
 ![image](https://github.com/user-attachments/assets/5585c01c-0e1c-4e8f-91b7-ceae1a5bb772)
@@ -109,12 +115,12 @@ Now, Select Severity and copy its level “high”.
 
 ![image](https://github.com/user-attachments/assets/212e594c-d50d-4cba-b4a6-ede1d3277a73)
 
-Key findings for first phase:
+**Key findings for first phase:** <br>
 Signature: Connection to Honeypot
 Severity: High
 
 
-2.	Supporting Evidence
+**2. Supporting Evidence** <br>
 
 For this part, First select the Event time and copy it.
 
@@ -132,23 +138,23 @@ For hash part select md5 and sha512 and copy it.
 
 ![image](https://github.com/user-attachments/assets/315d687c-79b3-4e10-95c9-1b770790a874)
 
-Key findings for phase2:
+**Key findings for phase 2:** <br>
 
-Time: 2025-03-18T12:39:12.575698
+Time: 2025-03-18T12:39:12.575698 <br>
 
-Source IP: 170.244.70.10
-Source Port: 50721
-Protocol: TCP
+Source IP: 170.244.70.10 <br>
+Source Port: 50721 <br>
+Protocol: TCP <br>
 
-Destination IP (targeted): 172.172.168.52
-Destination Hostname (sensor): 634851ba-c550-11ef-8089-000d3a556b22
-Destination Port: 445
-Destination Type (Vendor Product): Dionaea Honeypot
+Destination IP (targeted): 172.172.168.52 <br>
+Destination Hostname (sensor): 634851ba-c550-11ef-8089-000d3a556b22 <br>
+Destination Port: 445 <br>
+Destination Type (Vendor Product): Dionaea Honeypot <br>
 
-MD5 hash: ae12bb54af31227017feffd9598a6f5e
-sha 512: a80b1cc70cafff3b8edb2e732fa2360436cc7556ba91977ab1fa505ad7c6e184c465839d1584f827be17ccb751240432348debe69eed4e006321d9af4334621b
+MD5 hash: ae12bb54af31227017feffd9598a6f5e <br>
+sha 512: a80b1cc70cafff3b8edb2e732fa2360436cc7556ba91977ab1fa505ad7c6e184c465839d1584f827be17ccb751240432348debe69eed4e006321d9af4334621b <br>
 
-3.	Analysis
+**3. Analysis** <br>
 
 In this stage, we’ll use publicly available tools that helps us to do analysis whether a source IP is considered to be verdict as a malicious or not.
 To do analysis on collected evidence, first select the source IP go to https://whois.domaintools.com/
@@ -330,37 +336,38 @@ Now, we have threat score details which is 100 out of 100 available for the give
 
 ![image](https://github.com/user-attachments/assets/a281252c-ea17-426a-ad35-546b3709ab7b)
 
-Key Findings for phase3:
+**Key Findings for phase 3:**
 
-inetnum:     170.244.68.0/22
-aut-num:     AS266517
-abuse-c:     MAWBA21
-owner:       New Life Telecom Eireli EPP
-ownerid:     13.064.983/0001-71
-responsible: New Life Telecom Eireli EPP
-country:     BR
-owner-c:     MAWBA21
-tech-c:      RALSC23
-created:     20170119
-changed:     20250307
+inetnum:     170.244.68.0/22 <br>
+aut-num:     AS266517 <br>
+abuse-c:     MAWBA21 <br>
+owner:       New Life Telecom Eireli EPP <br>
+ownerid:     13.064.983/0001-71 <br>
+responsible: New Life Telecom Eireli EPP <br>
+country:     BR <br>
+owner-c:     MAWBA21 <br>
+tech-c:      RALSC23 <br>
+created:     20170119 <br>
+changed:     20250307 <br>
 
-Result of reputation checks on IP
-Virus Total: 0/94
-Ipvoid: 1/93
-IPspamlist: reports port 445 Network traffic as a MS-DS Attack similar to what we saw in the destination port (targeted port).
-AbuseIPDB: listed 29 times for abusive activities engagement and the Confidence of Abuse is 73%.
+**Result of reputation checks on IP** <br>
 
-
-Hash:
-Virus Total: 66/70 (WannaCry Ransomware)
-Hybrid analysis (Sandbox report): verdict malicious with threat score 100/100
+Virus Total: 0/94 <br>
+Ipvoid: 1/93 <br>
+IPspamlist: reports port 445 Network traffic as a MS-DS Attack similar to what we saw in the destination port (targeted port). <br>
+AbuseIPDB: listed 29 times for abusive activities engagement and the Confidence of Abuse is 73%. <br>
 
 
-4.	Conclusion
+Hash: <br>
+Virus Total: 66/70 (WannaCry Ransomware) <br>
+Hybrid analysis (Sandbox report): verdict malicious with threat score 100/100<br>
+
+
+**4. Conclusion** <br>
 
 After a thorough analysis on Source IP address (170.244.70.10), it is confirmed to be as a malicious and rogue for sending port 445 Network traffic, which targeted Microsoft SMB (Server Message Block) commonly used for communication protocol to share computing resources and the indicator of the hash file found is also known to be malicious and of a WannaCry Ransomware variant from multiple sources. Therefore, I conclude, this is a malicious behaviour.
 
-5.	Next Steps
+**5. Next Steps** <br>
 
 As per my conclusion, please, block the mentioned source IP address at the Firewall level and marked this to be blacked with respective hash on all the endpoint devices which could be exploited by attacker. I Escalated this to Incident Response team for further and immediate actions.
 
