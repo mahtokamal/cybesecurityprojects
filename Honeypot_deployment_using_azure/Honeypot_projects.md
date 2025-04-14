@@ -108,11 +108,90 @@ Let it remain VM Achitecure by default
 ![Screenshot (384)](https://github.com/user-attachments/assets/844fc590-9ccd-4806-be5e-cbc55ea3c1c8)
 
 # Open Traffic Flow
+Now we need to open up the gates and create a rule to allow all communication in to the honeypot. This will allow the adversaries to be able to attack the honeypot so you can collect the data.
+
+- At the top search bar, type in “tpot-vm-nsg” and select the network security group resource
+
+![Screenshot (386)](https://github.com/user-attachments/assets/0443798b-e947-402b-816c-0a278fe51c5a)
+
+- Select “Inbound security rules” on the left
+
+![Screenshot (387)](https://github.com/user-attachments/assets/f37b09cb-6658-44df-a294-56a9d37f5d48)
+
+![Screenshot (388)](https://github.com/user-attachments/assets/fc7e28bc-9c8a-4946-b8c7-19e72cc184ce)
+
+- Click “Add”
+- 
+![Screenshot (389)](https://github.com/user-attachments/assets/ec836f95-4ee1-4c01-9c97-a4059bdebe10)
+
+- Change Destination port ranges to start “*” (Note, in the screenshots you'll see 8080, but I made mistake be sure to select"*")
+- Change Priority to “100”
+- Change Name to “DANGER_ALLOW_ALL”
+- Click “Add”
+
+![Screenshot (390)](https://github.com/user-attachments/assets/08b28ca8-14b4-4d1c-b1a9-ff96d5455d2d)
+
+![Screenshot (391)](https://github.com/user-attachments/assets/0fcc897e-6389-44aa-a507-cf51df7700d4)
+
+![Screenshot (393)](https://github.com/user-attachments/assets/b3ca51ed-8865-4891-bb7d-1da8053357ae)
 
 
+# Configuring the honeypot
+Now we need to go grab the public IP address for the VM, as its time to log into the VM.
+- Type in “tpot-vm” in the search bar at the top and select the resource
+
+![Screenshot (394)](https://github.com/user-attachments/assets/ac9db121-43b2-4afe-8624-37d8a23c6761)
+
+- Copy the Public IP address to the clipboard
+
+![Screenshot (395)](https://github.com/user-attachments/assets/005be76b-cb10-401f-8a0c-8a3b61cfb2e3)
+
+Windows has the ability to connect SSH from the command prompt in Win 10 and Win 11, Mac and Linux also allows SSH from the terminal. Go ahead and SSH into the host:
+Use the formats (ssh azureuser@<public ip address>)
+Example - ssh azureuser@20.55.37.81 then enter your created password.
+
+![Screenshot (397)](https://github.com/user-attachments/assets/55fef1bb-3bfd-43e9-86e4-ed08b5fb0046)
+
+- Execute these commands <br>
+env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/install.sh)" <br>
+Select "Hive" install <br>
+sudo reboot (when finished) <br>
+
+![Screenshot (398)](https://github.com/user-attachments/assets/dac3787d-69d4-4149-9881-e4c00f3887c5)
+
+![Screenshot (400)](https://github.com/user-attachments/assets/fab41a89-029c-4d93-9185-0255b70cf5e2)
+
+![Screenshot (402)](https://github.com/user-attachments/assets/7abb668b-5099-48f3-8456-90202e6d11b6)
+
+![Screenshot (404)](https://github.com/user-attachments/assets/8376c966-48de-4b0d-93e5-5915036aaa1e)
+
+![Screenshot (405)](https://github.com/user-attachments/assets/dcaca239-6744-4103-aa6e-88bcb2e45a3c)
+
+![Screenshot (406)](https://github.com/user-attachments/assets/a36b281b-9592-4932-8dd4-61affc1738e8)
+
+![Screenshot (409)](https://github.com/user-attachments/assets/9d05062b-91da-41aa-aa58-2ff5e9f3605b)
+
+> [!NOTE]
+> Note: The installation script changes the port to SSH on, so if you want to ssh to it you have to use this syntax "ssh azureuser@<ip address> -p 64295"
+
+![Screenshot (416)](https://github.com/user-attachments/assets/cdb3b58b-ffda-4967-9557-4c33a9211f89)
 
 
+- You can now login to the honeypot web interface via "https://<ipaddress>:64297"
+
+![Screenshot (410)](https://github.com/user-attachments/assets/2a2dd736-00b8-49cb-ac48-63ba8d1397a0)
+
+![Screenshot (411)](https://github.com/user-attachments/assets/e0abbdb0-ba90-434c-9e7f-4f229dd699b8)
+
+![Screenshot (413)](https://github.com/user-attachments/assets/f46547ab-42a1-4deb-b241-0799cf378118)
+
+![Screenshot (415)](https://github.com/user-attachments/assets/5d126cba-d714-4651-8631-888da475f851)
+
+![Screenshot (418)](https://github.com/user-attachments/assets/dce07b8a-c5e1-421f-9766-950fb40df9f1)
+
+![Screenshot (419)](https://github.com/user-attachments/assets/4fba3e16-e019-40f6-a391-9276aea0a69e)
+
+![Screenshot (420)](https://github.com/user-attachments/assets/00097401-9b04-4293-9642-4cdf09d86500)
 
 
-
-
+- Be sure to delete the resource group to delete all resources when you're finished!
