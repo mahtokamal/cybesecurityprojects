@@ -39,12 +39,32 @@ Then We will create a new resource group and name it “tpot-rg” as shown in t
 
 This Project will be having some of the resources such as Virtual Machine, Public IP address, Network Security Group,… etc that will be inside of this resource group.
 When you finish with the Honey Pot(T-Pot) lab, all that you need to do is delete the resource group to delete this entire project.
+
 ![image](https://github.com/user-attachments/assets/9d03295c-653f-4847-b198-7f28eba458f0)
+
+Click on "Create new" as shown in the Right under Resource group and named it as "tpot-rg" and hit "OK".
 
 ![image](https://github.com/user-attachments/assets/0efb5f0b-5ebd-47d4-8f11-30a0e658c0df)
 
 ![image](https://github.com/user-attachments/assets/181a00c2-52bb-44ae-8c41-0c2f899e1e57)
 
+Now, select the following details carefully:
+
+- Name the Virutal Machine name as, ""tpot-VM
+- Set the region to be "East-US"
+- Set No Infrastructure Redundancy Required or let it select automatically by Azure options for Availability options
+- Click see all images and select “Ubuntu Server 24.04 LTS -x64 Gen1(free service eligible)”
+- Security type,"Standard"
+- 
+![Screenshot (363)](https://github.com/user-attachments/assets/c6d3cd15-c05f-484f-b471-bdf25ee12d57)
+
+![Screenshot (448)](https://github.com/user-attachments/assets/fa14b446-b9a9-46b6-b5c0-ceb46308c96d)
+
+![Screenshot (364)](https://github.com/user-attachments/assets/6239793b-ad95-4f9b-b555-f50611b6bd3b)
+
+Let it remain VM Achitecure by default
+
+![Screenshot (365)](https://github.com/user-attachments/assets/2ea83c5c-a95c-4ffa-9017-6b71fcc7c1c4)
 
 
 
