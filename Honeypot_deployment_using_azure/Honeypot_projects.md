@@ -17,13 +17,15 @@ Once your account creation is done, just follows the following steps:
 
 ![image](https://github.com/user-attachments/assets/76309c1d-1e09-4875-8a49-1e8f408b77f9)
 
-At the top search icon🔎 bar, type "Virtual Machine"
+At the top search icon bar 🔎 , type "Virtual Machine" and select it. Scrolled down.
 ![image](https://github.com/user-attachments/assets/c9f7836a-80e1-4187-9cef-aa66891648d7)
 
 ![image](https://github.com/user-attachments/assets/5f63c727-501e-450a-92d2-6d6ed3795be4)
 
+When you see "Create" button just click on it to create a new virtual Machine.
 ![image](https://github.com/user-attachments/assets/f6d9c685-f8a0-430f-ac23-e2fc0f5aff50)
 
+Choose the option "Azure Virtual Machine hosted by Azure".
 ![image](https://github.com/user-attachments/assets/0a240240-e9ea-4d1d-ad9d-524648ef4880)
 
 ![image](https://github.com/user-attachments/assets/9d03295c-653f-4847-b198-7f28eba458f0)
