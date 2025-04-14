@@ -66,6 +66,32 @@ Let it remain VM Achitecure by default
 
 ![Screenshot (365)](https://github.com/user-attachments/assets/2ea83c5c-a95c-4ffa-9017-6b71fcc7c1c4)
 
+- Select size "Standard_D2s_v3 - 2 vcpus, 8 GiB memory"
+
+![Screenshot (367)](https://github.com/user-attachments/assets/9986803b-b81c-4b58-b3e2-707d0625f924)
+
+- Select authentication type "Password"
+- Choose username ‘azureuser’ and type a password(your convenience for this project)
+- Click “Next: Disks"
+
+![Screenshot (368)](https://github.com/user-attachments/assets/dd693786-dc5e-4af8-9719-22d6e5ac38c3)
+
+- On the "Disks" tab, Change the disk size to 128GiB
+- Click Next
+
+![Screenshot (369)](https://github.com/user-attachments/assets/b5592b2f-789f-43e8-8dea-b5317884117a)
+
+![Screenshot (370)](https://github.com/user-attachments/assets/e58c1c15-525e-4ce6-9733-303ab471d569)
+
+## Networking tab
+
+- be sure to Check the box to "Delete public IP and NIC when VM is deleted"
+- Click “Next: Management”
+![Screenshot (373)](https://github.com/user-attachments/assets/cc376b57-1c61-4575-941f-a5117c98b547)
+
+![Screenshot (374)](https://github.com/user-attachments/assets/027d556a-bb15-4255-8347-6cf45504ad82)
+
+![Screenshot (376)](https://github.com/user-attachments/assets/263a2644-0913-4c44-9abe-cba05f8bf2ce)
 
 
 
