@@ -193,5 +193,26 @@ sudo reboot (when finished) <br>
 
 ![Screenshot (420)](https://github.com/user-attachments/assets/00097401-9b04-4293-9642-4cdf09d86500)
 
-
+## Deleting Resource Group
 - Be sure to delete the resource group to delete all resources when you're finished!
+
+![Screenshot (432)](https://github.com/user-attachments/assets/3da28290-c343-4d19-bdd3-618d4a3c1612)
+
+![Screenshot (433)](https://github.com/user-attachments/assets/3ea1cbf7-52c4-453d-8d2b-24da5f334d8d)
+
+![Screenshot (435)](https://github.com/user-attachments/assets/9b93b20f-ff59-400d-8868-cbc8025724b9)
+
+![Screenshot (436)](https://github.com/user-attachments/assets/c34df05d-f3b5-40f3-bb04-db56b4e997a4)
+
+![Screenshot (440)](https://github.com/user-attachments/assets/7199aa63-fe32-4ecf-8079-679ba858d1e5)
+
+![Screenshot (441)](https://github.com/user-attachments/assets/fd8f34a1-2559-4ff7-9d0a-ba36e81cc8d9)
+
+![Screenshot (442)](https://github.com/user-attachments/assets/309afc44-b6a1-4400-932e-1084cf0facc8)
+
+![Screenshot (443)](https://github.com/user-attachments/assets/fc4f446b-02d4-4c20-948a-047765528171)
+
+![Screenshot (445)](https://github.com/user-attachments/assets/c71035b5-275a-46ab-a31c-8c030a0a1a97)
+
+![Screenshot (447)](https://github.com/user-attachments/assets/ab1c3f4e-d248-423c-b3fd-f3d0a4fcfc6f)
+
