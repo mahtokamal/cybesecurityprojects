@@ -93,6 +93,23 @@ Let it remain VM Achitecure by default
 
 ![Screenshot (376)](https://github.com/user-attachments/assets/263a2644-0913-4c44-9abe-cba05f8bf2ce)
 
+## Management
+
+- Click “Review + create” at the top
+- Click “Create” to create your new VM (by reading Terms)
+- Wait for your Virual Machine completely finish deployment process
+![Screenshot (378)](https://github.com/user-attachments/assets/6bea8b28-7c95-49b8-a0f3-4b2548b7b32e)
+![Screenshot (379)](https://github.com/user-attachments/assets/befd3a5a-4516-4d33-b297-fcb6c4048238)
+
+![Screenshot (380)](https://github.com/user-attachments/assets/5e5e2eb7-0733-4a7c-8948-29de3d6ec7ba)
+![Screenshot (381)](https://github.com/user-attachments/assets/f49bcd2d-0000-4843-8b7a-cfa159829008)
+
+![Screenshot (383)](https://github.com/user-attachments/assets/ecacd06e-eb20-4070-b027-d04d774bf79d)
+![Screenshot (384)](https://github.com/user-attachments/assets/844fc590-9ccd-4806-be5e-cbc55ea3c1c8)
+
+# Open Traffic Flow
+
+
 
 
 
