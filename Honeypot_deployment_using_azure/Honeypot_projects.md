@@ -147,7 +147,7 @@ Now we need to go grab the public IP address for the VM, as its time to log into
 ![Screenshot (395)](https://github.com/user-attachments/assets/005be76b-cb10-401f-8a0c-8a3b61cfb2e3)
 
 Windows has the ability to connect SSH from the command prompt in Win 10 and Win 11, Mac and Linux also allows SSH from the terminal. Go ahead and SSH into the host:
-Use the formats (ssh azureuser@<public ip address>)
+Use the formats (ssh azureuser@public ip address) <br>
 Example - ssh azureuser@20.55.37.81 then enter your created password.
 
 ![Screenshot (397)](https://github.com/user-attachments/assets/55fef1bb-3bfd-43e9-86e4-ed08b5fb0046)
@@ -172,13 +172,13 @@ sudo reboot (when finished) <br>
 ![Screenshot (409)](https://github.com/user-attachments/assets/9d05062b-91da-41aa-aa58-2ff5e9f3605b)
 
 > [!NOTE]
-> Note: The installation script changes the port to SSH on, so if you want to ssh to it you have to use this syntax **(ssh azureuser@<ip address> -p 64295)**
+> Note: The installation script changes the port to SSH on, so if you want to ssh to it you have to use this syntax (ssh azureuser@public ip address -p 64295)
 
 ![Screenshot (416)](https://github.com/user-attachments/assets/cdb3b58b-ffda-4967-9557-4c33a9211f89)
 
 
-- You can now login to the honeypot web interface via **https://<ipaddress>:64297**
-- Open web browser, paste the adrress into URL "https://20.55.37.81:64297"
+- You can now login to the honeypot web interface via https://publicipaddress:64297
+- Open web browser, paste the adrress into URL  https://20.55.37.81:64297
 - click on advanced, then "proceed to 20.55.37.81:64297(unsafe)"
 - Now, Sign in with username(azureuser) and password, you'll be directed to T-pot(Honey pot) website
 - To know the attacker's source ip that attacked our deployed Honey pot, click on Kibana, scrolled down, you'll see attacker's source ip and alert signature.
@@ -198,7 +198,7 @@ sudo reboot (when finished) <br>
 ![Screenshot (420)](https://github.com/user-attachments/assets/00097401-9b04-4293-9642-4cdf09d86500)
 
 ## Deleting Resource Group
-- Be sure to delete the resource group to delete all resources when you're finished!
+- Be sure to delete the resource group when you're finished!
 - To delete resource group, log into Azure portal
 - Click on Resource, choose the resource group(tpot-rg), click on Delete resource group tab
 - check on the box "Apply force delete for selected Virtual Machines and Virtual machine scale sets"
