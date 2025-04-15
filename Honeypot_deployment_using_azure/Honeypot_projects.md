@@ -172,12 +172,16 @@ sudo reboot (when finished) <br>
 ![Screenshot (409)](https://github.com/user-attachments/assets/9d05062b-91da-41aa-aa58-2ff5e9f3605b)
 
 > [!NOTE]
-> Note: The installation script changes the port to SSH on, so if you want to ssh to it you have to use this syntax "ssh azureuser@<ip address> -p 64295"
+> Note: The installation script changes the port to SSH on, so if you want to ssh to it you have to use this syntax **(ssh azureuser@<ip address> -p 64295)**
 
 ![Screenshot (416)](https://github.com/user-attachments/assets/cdb3b58b-ffda-4967-9557-4c33a9211f89)
 
 
-- You can now login to the honeypot web interface via "https://<ipaddress>:64297"
+- You can now login to the honeypot web interface via **https://<ipaddress>:64297**
+- Open web browser, paste the adrress into URL "https://20.55.37.81:64297"
+- click on advanced, then "proceed to 20.55.37.81:64297(unsafe)"
+- Now, Sign in with username(azureuser) and password, you'll be directed to T-pot(Honey pot) website
+- To know the attacker's source ip that attacked our deployed Honey pot, click on Kibana, scrolled down, you'll see attacker's source ip and alert signature.
 
 ![Screenshot (410)](https://github.com/user-attachments/assets/2a2dd736-00b8-49cb-ac48-63ba8d1397a0)
 
@@ -195,6 +199,12 @@ sudo reboot (when finished) <br>
 
 ## Deleting Resource Group
 - Be sure to delete the resource group to delete all resources when you're finished!
+- To delete resource group, log into Azure portal
+- Click on Resource, choose the resource group(tpot-rg), click on Delete resource group tab
+- check on the box "Apply force delete for selected Virtual Machines and Virtual machine scale sets"
+- Now, enter resource group name(tpot-rg) to confirm deletion, then confirm "Delete"
+- Then, You'll get prompted a deletion message "Deleted resource group tpot-rg"
+- Refresh it, you will not found your resource group and you'll get a Status code "404" that confirms resource deletion.
 
 ![Screenshot (432)](https://github.com/user-attachments/assets/3da28290-c343-4d19-bdd3-618d4a3c1612)
 
