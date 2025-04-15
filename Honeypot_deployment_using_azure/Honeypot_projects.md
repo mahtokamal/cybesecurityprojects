@@ -172,7 +172,7 @@ sudo reboot (when finished) <br>
 ![Screenshot (409)](https://github.com/user-attachments/assets/9d05062b-91da-41aa-aa58-2ff5e9f3605b)
 
 > [!NOTE]
-> Note: The installation script changes the port to SSH on, so if you want to ssh to it you have to use this syntax (ssh azureuser@public ip address -p 64295)
+> Note: The installation script changes the port to SSH on, so if you want to connect ssh to it you have to use this syntax (ssh azureuser@public ip address -p 64295)
 
 ![Screenshot (416)](https://github.com/user-attachments/assets/cdb3b58b-ffda-4967-9557-4c33a9211f89)
 
