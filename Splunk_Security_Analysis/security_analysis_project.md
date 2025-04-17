@@ -116,7 +116,7 @@ Now, Select Severity and copy its level “high”.
 ![image](https://github.com/user-attachments/assets/212e594c-d50d-4cba-b4a6-ede1d3277a73)
 
 **Key findings for first phase:** <br>
-Signature: Connection to Honeypot
+Signature: Connection to Honeypot <br>
 Severity: High
 
 
