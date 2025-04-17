@@ -13,6 +13,7 @@ First Visit, [Microsoft Azure portal](https://azure.microsoft.com/en-us/get-star
 
 ## Creating a Azure Virtual Machine
 Once your account creation is done, just follows the following steps:
+
 ![image](https://github.com/user-attachments/assets/31b38bb6-296f-4841-87d4-60e9c8d5e2e7)
 
 ![image](https://github.com/user-attachments/assets/76309c1d-1e09-4875-8a49-1e8f408b77f9)
@@ -87,6 +88,7 @@ Let it remain VM Achitecure by default
 
 - be sure to Check the box to "Delete public IP and NIC when VM is deleted"
 - Click “Next: Management”
+  
 ![Screenshot (373)](https://github.com/user-attachments/assets/cc376b57-1c61-4575-941f-a5117c98b547)
 
 ![Screenshot (374)](https://github.com/user-attachments/assets/027d556a-bb15-4255-8347-6cf45504ad82)
@@ -98,6 +100,7 @@ Let it remain VM Achitecure by default
 - Click “Review + create” at the top
 - Click “Create” to create your new VM (by reading Terms)
 - Wait for your Virual Machine completely finish deployment process
+  
 ![Screenshot (378)](https://github.com/user-attachments/assets/6bea8b28-7c95-49b8-a0f3-4b2548b7b32e)
 ![Screenshot (379)](https://github.com/user-attachments/assets/befd3a5a-4516-4d33-b297-fcb6c4048238)
 
@@ -124,7 +127,7 @@ Now we need to open up the gates and create a rule to allow all communication in
 - 
 ![Screenshot (389)](https://github.com/user-attachments/assets/ec836f95-4ee1-4c01-9c97-a4059bdebe10)
 
-- Change Destination port ranges to start “*” (Note, in the screenshots you'll see 8080, but I made mistake be sure to select"*")
+- Change Destination port ranges to start * (Note, in the screenshots you'll see 8080, but I made mistake be sure to select * )
 - Change Priority to “100”
 - Change Name to “DANGER_ALLOW_ALL”
 - Click “Add”
