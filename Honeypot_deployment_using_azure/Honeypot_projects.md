@@ -16,6 +16,29 @@ Once your account creation is done, just follows the following steps:
 
 ![image](https://github.com/user-attachments/assets/31b38bb6-296f-4841-87d4-60e9c8d5e2e7)
 
+After logging into azure portal, now you have to add payment method to become eligible for Azure's Free trial "$200 free credit" with a period of 30 days. Click on Start button and follows each step carefully:
+
+![Screenshot (329)](https://github.com/user-attachments/assets/4b5d42ba-7b60-47d1-ae24-d8fbea7636fc)
+
+![Screenshot (331)](https://github.com/user-attachments/assets/d1846502-484a-4a62-be6f-84ccb64407fe)
+
+![Screenshot (334)](https://github.com/user-attachments/assets/58055ce2-5358-48f8-a841-ab42172a41ee)
+
+![Screenshot (335)](https://github.com/user-attachments/assets/d98787c7-65bd-4b6f-8f31-69a91b8fc99f)
+
+![Screenshot (337)](https://github.com/user-attachments/assets/394e6835-cb04-4d94-8c97-5b4fd2f09b7b)
+
+![Screenshot (341)](https://github.com/user-attachments/assets/4edafae7-5229-4042-be46-468c680609b8)
+
+![Screenshot (342)](https://github.com/user-attachments/assets/e93c12f3-2fee-49ae-a73a-3d7abbc7457f)
+
+![Screenshot (344)](https://github.com/user-attachments/assets/ad8a9364-86d1-47d3-8343-ac0915aef3ed)
+
+Next, Click on "Go to Azure Portal" and it will direct to the Microsoft Azure platfrom, where you can start using services for 30 days.
+
+![Screenshot (345)](https://github.com/user-attachments/assets/a135b696-f336-4bb6-b7cb-85edb0dceb64)
+
+
 ![image](https://github.com/user-attachments/assets/76309c1d-1e09-4875-8a49-1e8f408b77f9)
 
 At the top search icon bar 🔎 , type "Virtual Machine" and select it. Scrolled down.
