@@ -734,4 +734,69 @@ And that completes the lifecycle of initializing, planning, applying and destroy
 ![Screenshot (674)](https://github.com/user-attachments/assets/90cb2ac3-e8cf-4f18-a05b-7f6e187d2e78)
 ![Screenshot (675)](https://github.com/user-attachments/assets/b26cc547-eea8-44f5-b1c4-a348bd18f267)
 
-## 
+## 6. IAC- Scanning for Misconfigurations
+**Checking for Misconfigurations with Checkov** <br>
+Checkov is a static code analysis tool for scanning infrastructure as code (IaC) files for misconfigurations that may lead to security or compliance problems. Checkov includes more than 750 predefined policies to check for common misconfiguration issues.  Checkov also supports the creation and contribution of custom policies. 
+
+
+Supported IaC types
+Checkov scans these IaC file types:
+
+
+- Terraform (for AWS, GCP, Azure and OCI)
+- CloudFormation (including AWS SAM)
+- Azure Resource Manager (ARM)
+- Serverless framework
+- Helm charts
+- Kubernetes
+- Docker
+
+
+This lab shows how to install Checkov, run a scan, and analyze the results.
+
+
+### Install Pip3 and Python
+pip3 is the official package manager and pip command for Python 3. It enables the installation and management of third party software packages with features and functionality not found in the Python standard library. Pip3 installs packages from PyPI (Python Package Index).
+
+You can get it by installing the latest version of python here (official website).
+
+### Install Checkov From PyPI Using Pip
+
+- pip3 install checkov
+
+### Make Terraform Directory and Move There
+
+- mkdir ~/checkov-example
+- cd ~/checkov-example
+
+**Create main.tf file with VS Code** <br>
+
+- code main.tf
+
+### Paste Code into File, Save, then Exit
+
+Make sure there are no copy and paste extra characters in your code.
+
+resource "aws_s3_bucket" "foo-bucket" { <br>
+#same resource configuration as previous example, but acl set for public access. <br>
+acl = "public-read" <br>
+} <br>
+data "aws_caller_identity" "current" {} <br>
+
+### Format the file
+
+- terraform fmt
+
+### Execute Checkov
+
+Make sure you're in the directory that your Terraform is in.
+
+- checkov -f main.tf
+
+### Results
+
+<img width="1819" height="380" alt="Screenshot (686)" src="https://github.com/user-attachments/assets/0c513f18-6324-46e1-86fe-72d4d6d411c5" />
+
+It's that simple.  As you can see Checkov runs and it notes that versioning was not enabled for that resource.  Checkov checks for all common configuration and security errors in your Terraform code BEFORE deploying it.  Anytime you download a Terraform script to execute in your environment, you will want to run Checkov to make sure that it meets your standards for configuration. <br>
+
+Now, output the Checkov report to a file and save this file to attach to the form when submitting for a grade at the end of the course. <br>
