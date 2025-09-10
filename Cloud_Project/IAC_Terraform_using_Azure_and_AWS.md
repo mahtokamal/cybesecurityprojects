@@ -1,5 +1,4 @@
-# Terraform Hands-on with Azure and AWS
-## 
+# IAC (Terraform) Hands-on with Azure and AWS
 
 ## 1. Create a AWS account
 **Sign-up for Amazon Web Services free accounts** <br>
