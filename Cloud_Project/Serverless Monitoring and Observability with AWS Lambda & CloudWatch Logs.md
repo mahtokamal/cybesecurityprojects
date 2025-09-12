@@ -11,6 +11,7 @@
 - lambda creates a function and returns a function "Hello From Lambda"
 - lamda also creates an execution roles for your functions (an execution role is an AWS Identity and Access Management roles that grants lambda functions permission to access AWS services and resources).For your function, the role that Lambda creates grants basic permissions to write to CloudWatch Logs.
 
+
 ![Screenshot (687)](https://github.com/user-attachments/assets/23bfd3aa-3710-448e-8e4b-4e360cde5669)
 
 ![Screenshot (688)](https://github.com/user-attachments/assets/0260fa62-eaba-449f-94c4-d14258121eb3)
