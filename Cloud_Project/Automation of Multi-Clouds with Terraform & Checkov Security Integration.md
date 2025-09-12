@@ -1,4 +1,4 @@
-# IAC (Terraform) Hands-on with Azure and AWS
+# Automation of Multi-Clouds with Terraform & Checkov Security Integration 
 
 ## 1. Create a AWS account
 **Sign-up for Amazon Web Services free accounts** <br>
