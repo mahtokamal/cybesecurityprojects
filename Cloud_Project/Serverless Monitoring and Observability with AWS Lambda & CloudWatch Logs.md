@@ -1,4 +1,4 @@
-## Aws Serverless Computing
+# Serverless Monitoring and Observability with AWS Lambda & CloudWatch Logs
 ## 1. Hands-on AWS serverless lambda functions
 ### 1.1 How to Create AWS lambda functions?
 - open the function page with lambda console (type "lambda" in the search field and enter)
