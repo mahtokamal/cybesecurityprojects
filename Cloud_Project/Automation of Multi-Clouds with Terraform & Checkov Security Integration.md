@@ -202,12 +202,15 @@ NOTE: you can install Terraform through powershell too, for convenience of the p
 ![Screenshot (588)](https://github.com/user-attachments/assets/45a0f35f-fce9-4975-afe8-c5e2f4c09119)
 
 ### 4.1. Hands-On with Terraform Microsoft Azure <br>
-**Let's understand Terraform loop first**
+**Let's understand Terraform workflow first**
 
-- Init: Initialize the (local) Terraform environment. Usually executed only once per session.
-- Plan: Compare the Terraform state with the as-is state in the cloud, build and display an execution plan. This does not change the deployment (read-only).
-- Apply: Apply the plan from the plan phase. This potentially changes the deployment (read and write).
-- Destroy all resources that are governed by this specific terraform environment.
+<img width="1414" height="564" alt="Screenshot (833)" src="https://github.com/user-attachments/assets/901d928f-429f-4035-9d8b-67996683f7d0" />
+
+
+- **Init:** Initialize the (local) Terraform environment. Usually executed only once per session.
+- **Plan:** Compare the Terraform state with the as-is state in the cloud, build and display an execution plan. This does not change the deployment (read-only).
+- **Apply:** Apply the plan from the plan phase. This potentially changes the deployment (read and write).
+- **Destroy:** Destroy all resources that are governed by this specific terraform environment.
 
 - Now, Open powershell and type az login (a GUI prompt appears that let you log into Microsoft Azure, enter you azure user account and password) and proceed to continue
 - After logged in, subscription name, tenant and Subscription ID will show and enter "1" for selected Subscription ID
