@@ -1,5 +1,33 @@
-# Automation of Multi-Clouds with Terraform & Checkov Security Integration 
+# Automation of Multi-Clouds with Terraform & Checkov Security Integration
+**What is IaC (Infrastructure of Code) ?** <br>
+Infrastructure as Code (IaC) is a method for managing and provisioning IT infrastructure with code, allowing teams to automate and standardize deployments across environments instead of performing manual configurations. This brings speed, reliability, and efficiency to cloud operations and security tasks.<br>
 
+IaC uses machine-readable files—typically written in languages like YAML, JSON, or HCL (HashiCorp Configuration Language) —to define infrastructure resources such as servers, databases, networks, and storage. These code files are stored in version control systems, track changes, and can be reused or rolled back for consistent deployments. <br>
+
+**NOTE:** Infrastructure as Code makes cloud and security operations faster, more reliable, and more secure, forming a backbone for modern DevOps and cloud-native strategies. <br>
+
+**Benefits of IaC** <br>
+- Automation: Reduces manual labor and human error.
+- Repeatability: Enables identical infrastructure setups across different environments.
+- Scalability: Infrastructure resources can be scaled up/down rapidly.
+- Cost Efficiency: Resources can be created or destroyed on demand, saving costs.
+- Documentation: IaC scripts serve as living documentation.
+- Security: Policies and controls can be embedded directly in code, increasing compliance.
+
+**Popular IaC tools** <br>
+|Tools|Features|Cloud Platforms|
+|---|---|---|
+|Terraform|Declarative configs, cloud-agnostic|Multiple clouds|
+|AWS CloudFormation|AWS-focused declarative templates|AWS only|
+|Azure Resource Manager|Microsoft Azure infrastructure|Azure only|
+|Pulumi|Code in general-purpose languages|Multiple clouds|
+|Ansible|Agentless automation|	Multi-cloud|
+|Chef|	Ruby-based configs|Multi-cloud|
+|Puppet|Declarative state enforcement|Multi-cloud|
+|Google Cloud Deployment Manager|Google Cloud templates|GCP only|
+|SaltStack, Crossplane|Kubernetes integration/support|Multi-cloud|
+|Vagrant|Local VM environments|	Local/multi-cloud|
+|Spacelift, Checkov, Infracost, env0|Cost, policy, and governance tools|Usually multi-cloud |
 ## 1. Create a AWS account
 **Sign-up for Amazon Web Services free accounts** <br>
 - Visit https://aws.amazon.com/ click on "Create an AWS account"
