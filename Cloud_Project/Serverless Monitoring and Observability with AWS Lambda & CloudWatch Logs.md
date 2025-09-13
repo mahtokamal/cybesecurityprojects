@@ -1,4 +1,19 @@
 # Serverless Monitoring and Observability with AWS Lambda & CloudWatch Logs
+**What is Serverless computing?** <br>
+AWS serverless computing is a cloud-native model where developers build and run applications without managing servers or underlying infrastructure. AWS automatically handles all server management, scaling, availability, and security, so teams can focus on code and business logic.<br>
+
+**Important Features:** <br>
+- **No server management:** Developers do not provision or maintain servers; AWS handles everything invisibly.
+- **Automatic scaling:** Apps scale up or down based on demand, with AWS dynamically providing resources.
+- **Pay-for-use pricing:** Costs are based only on actual usage (“per execution”), not pre-provisioned capacity.
+- **Built-in fault tolerance and availability:** AWS ensures high uptime without manual intervention.
+
+**How Serverless Computing Works?** <br>
+- Developers write and deploy code as discrete "functions" or microservices.
+- These functions remain dormant until an event triggers them (like an HTTP request, file upload, or database update).
+- The cloud provider automatically allocates resources as needed, runs the code, and deallocates infrastructure when done—scaling to zero when not in use.
+- Billing is based only on execution time and resource usage, not on pre-provisioned or idle capacity
+
 ## 1. Hands-on AWS serverless lambda functions
 ### 1.1 How to Create AWS lambda functions?
 - open the function page with lambda console (type "lambda" in the search field and enter)
@@ -70,20 +85,20 @@ Select Deploy to update your function's code. When Lambda has deployed the chang
 ### 1.2. Understanding your function code
 Before you move to the next step, let's take a moment to look at the function code and understand some key Lambda concepts.
 
-The Lambda handler:Your Lambda function contains a Python function named lambda_handler. A Lambda function in Python can contain more than one Python function, but the handler function is always the entry point to your code. When your function is invoked, Lambda runs this method.
+**The Lambda handler:** Your Lambda function contains a Python function named lambda_handler. A Lambda function in Python can contain more than one Python function, but the handler function is always the entry point to your code. When your function is invoked, Lambda runs this method.
 
 When you created your Hello world function using the console, Lambda automatically set the name of the handler method for your function to lambda_handler. Be sure not to edit the name of this Python function. If you do, Lambda won’t be able to run your code when you invoke your function.
 
 
-The Lambda event object:The function lambda_handler takes two arguments, event and context. An event in Lambda is a JSON formatted document that contains data for your function to process.If your function is invoked by another AWS service, the event object contains information about the event that caused the invocation. For example, if an Amazon Simple Storage Service (Amazon S3) bucket invokes your function when an object is uploaded, the event will contain the name of the Amazon S3 bucket and the object key.In this example, you’ll create an event in the console by entering a JSON formatted document with two key-value pairs.
+**The Lambda event object:** The function lambda_handler takes two arguments, event and context. An event in Lambda is a JSON formatted document that contains data for your function to process.If your function is invoked by another AWS service, the event object contains information about the event that caused the invocation. For example, if an Amazon Simple Storage Service (Amazon S3) bucket invokes your function when an object is uploaded, the event will contain the name of the Amazon S3 bucket and the object key.In this example, you’ll create an event in the console by entering a JSON formatted document with two key-value pairs.
 
 
-The Lambda context object:The second argument your function takes is context. Lambda passes the context object to your function automatically. The context object contains information about the function invocation and execution environment.
+**The Lambda context object:** The second argument your function takes is context. Lambda passes the context object to your function automatically. The context object contains information about the function invocation and execution environment.
 
 You can use the context object to output information about your function's invocation for monitoring purposes. In this example, your function uses the log_group_name parameter to output the name of its CloudWatch log group.
 
 
-Logging in Lambda:With Python, you can use either a print statement or a Python logging library to send information to your function's log. To illustrate the difference in what's captured, the example code uses both methods. In a production application, we recommend that you use a logging library.
+**Logging in Lambda:** With Python, you can use either a print statement or a Python logging library to send information to your function's log. To illustrate the difference in what's captured, the example code uses both methods. In a production application, we recommend that you use a logging library.
 
 
 Invoke the Lambda function using the console
@@ -116,7 +131,7 @@ To invoke your function using the Lambda console, you first create a test event 
 ![Screenshot (702)](https://github.com/user-attachments/assets/70bfead9-e699-4eba-974f-b419287c90fd)
 
 
-You now test your function and use the Lambda console and CloudWatch Logs to view records of your function’s invocation.
+Now, you can test your function and use the Lambda console and CloudWatch Logs to view records of your function’s invocation.
 
 ### 1.4. To test your function and view invocation records in the console
 In the Code source pane, choose Test. When your function finishes running, you’ll see the response and function logs displayed in the Execution results tab.
